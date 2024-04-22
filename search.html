@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script src = "search.js"></script>
+        <link rel="stylesheet" type="text/css" href="external.css">
+        <title>MTG Helper | Card Search</title>
+    </head>
+
+    <body onload="check_Cookie()">
+        <div class="row">
+            <div class="header">
+                <img src="logo.png" alt="MTG Logo">
+            </div>
+
+            <div class="header" align="center">
+                <a href="index.html"><img src="header.png" alt="MTG helper"></a>
+            </div>
+            
+            <div class="header" align="right">
+                <a href ="#" onclick="toggle_Light()"><img id="dark" src="dark_on.png"></a>
+            </div>
+        </div>
+
+        <div class="sideBar">
+            <a href="index.html">Home</a>
+            <a href="search.html">Card Finder</a>
+            <a href="life.html">Life Tracker</a>
+            <a href="links.html">Further Links</a>
+            <a href="about.html">About Me</a>
+        </div>
+
+        <h1>Card Search</h1>
+        <div class="table_Flex">
+            <table id="card_Table">
+                <tr>
+                    <td><input type="text" placeholder="Search..." id="search"><button type ="submit" id="search" onclick="card_Search()">Go!</button></td>
+                </tr>
+                <tr>
+                    <td rowspan="6"><img id="output"></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <th style="width: 1000px;"><div id="name"></div></th>
+                </tr>
+                <tr>
+                    <td>Cost</td>
+                    <th style="width: 1000px;"><div id="cost"></div><div id="cost"></div></t>
+                </tr>
+                <tr>
+                    <td>Rules Text</td>
+                    <th style="width: 1000px;"><div id="rules"></div></th>
+                 
+                </tr>
+                <tr>
+                    <td>P/T</td>
+                    <th style="width: 1000px;"><div id="pt"></div></th>
+                </tr>
+                <tr>
+                    <td>Rarity</td>
+                    <th style="width: 1000px;"><div id="rare"></div></th>
+                </tr>
+        
+            </table>
+        </div>
+
+
+    
+        
+    </body>
+</html>
+
+<!-- https://www.flaticon.com/free-icons/slider-button -->

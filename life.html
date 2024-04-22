@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <script src = "life.js"></script>
+        <script src="search.js"></script>
+        <link rel="stylesheet" type="text/css" href="external.css">
+        <title>MTG Helper | Life Tracker</title>
+        </head>
+
+
+        <body onload="check_Cookie()">
+            <div class="row">
+                <div class="header">
+                    <img src="logo.png" alt="MTG Logo">
+                </div>
+    
+                <div class="header" align="center">
+                    <a href="index.html"><img src="header.png" alt="MTG helper"></a>
+                </div>
+                
+                <div class="header" align="right">
+                    <a href ="#" onclick="toggle_Light()"><img id="dark" src="dark_on.png"></a>
+                </div>
+            </div>
+
+            <div class="sideBar">
+                <a href="index.html">Home</a>
+                <a href="search.html">Card Finder</a>
+                <a href="life.html">Life Tracker</a>
+                <a href="links.html">Further Links</a>
+                <a href="about.html">About Me</a>
+            </div>
+            <center><button onclick="reset_Game()">RESET</button></center>
+            
+            <div class="container_Life">
+                <div>
+                    <table id="player1_life">
+                        <tr>
+                            <td colspan="2">Score</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="p1_Score">0</td>
+                        </tr>
+
+                        <caption><input type="text" Value="PLAYER 1" id="name1"></caption>
+
+                        <tr> 
+                            <td><button class="button_Circle"  onclick="p1_add5_hp()">+5</button></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button_Circle" onclick="p1_add1_hp()">+1</button></td>
+                            <td><button class="button_Circle" onclick="p1_add1_po()">+1</button></td>
+                        </tr>
+                        <tr>
+                            <td>Health</td>
+                            <td>Poison</td>
+                        </tr>
+                        <tr>
+                            <td id="health_1">20</td>
+                            <td id="poison_1">0</td>
+                        </tr>
+                        <tr>
+                            <td><button class="button_Circle" onclick="p1_sub1_hp()">-1</button></td>
+                            <td><button class="button_Circle" onclick="p1_sub1_po()">-1</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button_Circle" onclick="p1_sub5_hp()">-5</button></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="end_Game" onclick="p1_Game_Loss()">Game Loss</button></tr>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div>
+                    <table id="player2_life">
+                        <caption><input type="text" Value="PLAYER 2" id="name2"></caption>
+                        <tr>
+                            <td colspan="2">Score</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" id="p2_Score">0</td>
+                        </tr>
+                        <tr> 
+                            <td><button class="button_Circle" onclick="p2_add5_hp()">+5</button></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button_Circle" onclick="p2_add1_hp()">+1</button></td>
+                            <td><button class="button_Circle" onclick="p2_add1_po()">+1</button></td>
+                        </tr>
+                        <tr>
+                            <td>Health</td>
+                            <td>Poison</td>
+                        </tr>
+                        <tr>
+                            
+                            <td id="health_2">20</td>
+                            <td id="poison_2">0</td>
+                        </tr>
+                        <tr>
+                            <td><button class="button_Circle" onclick="p2_sub1_hp()">-1</button></td>
+                            <td><button class="button_Circle" onclick="p2_sub1_po()">-1</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="button_Circle" onclick="p2_sub5_hp()">-5</button></td>
+                            <td></button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button class="end_Game" onclick="p2_Game_Loss()">Game Loss</button></tr>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        
+            <script src="search.js"></script>
+
+        </body>
+</html>

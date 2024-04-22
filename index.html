@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> SET08101 - Web Tech </title>
+        <script src = "search.js"></script>
+        <link rel="stylesheet" href="external.css">
+        <title>MTG Helper | Home</title>
     </head>
-    <body>
-        <h1>Hello Web Tech!</h1>
-        <h2>This is another heading</h2>
-        <h3>Even more headings!</h3>
+    <body onload="check_Cookie()">
+        <div class="row">
+            <div class="header">
+                <img src="logo.png" alt="MTG Logo">
+            </div>
+
+            <div class="header" align="center">
+                <a href="index.html"><img src="header.png" alt="MTG helper"></a>
+            </div>
+            
+            <div class="header" align="right">
+                <a href ="#" onclick="toggle_Light()"><img id="dark" src="dark_on.png"></a>
+            </div>
+        
+        </div>
+
+
+        <div class="sideBar">
+            <a href="index.html">Home</a>
+            <a href="search.html">Card Finder</a>
+            <a href="life.html">Life Tracker</a>
+            <a href="links.html">Further Links</a>
+            <a href="about.html">About Me</a>
+        </div>
+
+        <div id="indexInfo">Welcome to the <i>Magic the Gathering Helper</i> page, this site will provide you with some tools and links to help find cards, as well as a handy life/poision tracker for both you and your oppenent. Use the Links below to naviage the website </div>
+        <div id="indexFlex">
+            <div>
+                <a href="search.html"><img src="deck_link.png" /></a>
+            </div>
+            <div>
+                <a href="life.html"><img src="life_link.png" /></a>
+            </div>
+            <div>
+                <a href="links.html"><img src="all_links.png" /> </a>
+            </div>
+                
+
+        </div>
+        
+        <p>  </p>
+    
+
+        <div id="snackbar">This website uses cookies for for this website to function, We do NOT use cookies for tracking, advertising or reporting. <p><button id="ok" onclick="cookieOK()">Understood</button> </div>
+       
+    
     </body>
+
 </html>
